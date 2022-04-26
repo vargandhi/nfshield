@@ -14,6 +14,10 @@ class MediumBoomConfig extends Config(
   new boom.common.WithNMediumBooms(1) ++                         // medium boom config
   new chipyard.config.AbstractConfig)
 
+class DualMediumBoomConfig extends Config(
+  new boom.common.WithNMediumBooms(2) ++
+  new chipyard.config.AbstractConfig)
+
 class LargeBoomConfig extends Config(
   new boom.common.WithNLargeBooms(1) ++                          // large boom config
   new chipyard.config.AbstractConfig)
